@@ -1,0 +1,15 @@
+# syntax=docker/sandbox-kit:3
+schemaVersion: "3"
+kind: mixin
+displayName: Everetti theme
+description: >-
+  The Everetti colour theme for Neovim and OpenCode, as generated files under
+  /usr/share/everetti/<tool>/. Files only: a tool's kit says it uses the
+  theme with `integrates: ["everetti-theme"]` and links its own file from there.
+  Copied from turdidae/pilareski/everetti until the generator is wired in.
+sourceUrl: https://gitlab.com/turdidae/pilareski/everetti
+licenses: [MIT]
+
+version: "0.1.0" # x-release-please-version
+provides: ["everetti-theme@0.1.0"] # x-release-please-version
+dockerfile: everetti-theme.dockerfile
