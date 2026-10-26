@@ -8,7 +8,7 @@ set -eu
 dir=${1%/}
 name=$(basename "$dir")
 file="$name.yaml"
-version=$(sed -n 's/^version:[[:space:]]*"\{0,1\}\([0-9][0-9.]*\)"\{0,1\}[[:space:]]*$/\1/p' "$dir/$file")
+version=$(sed -n 's/^version:[[:space:]]*"\{0,1\}\([0-9][0-9.]*\)"\{0,1\}[[:space:]]*\(#.*\)\{0,1\}$/\1/p' "$dir/$file")
 [ -n "$version" ] || { echo "no version in $dir/$file" >&2; exit 1; }
 
 ref="docker.io/$DOCKERHUB_NAMESPACE/$name:$version"

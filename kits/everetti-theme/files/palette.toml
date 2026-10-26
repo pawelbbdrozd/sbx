@@ -1,0 +1,113 @@
+[meta]
+name        = "Everetti"
+description = "A dark syntax color theme inspired by the Everett's Thrush (Zoothera everetti) — rich browns, warm oranges, and pale creams against a dark forest floor."
+variant     = "dark"
+
+# ── UI color system ───────────────────────────────────────────────────────────
+
+[ui.text]
+base  = "#D9D7CE"   # pale buff — main text
+shade = "#8A7E72"   # earthy mid-tone — muted text, comments
+tint  = "#A1988E"   # lighter mid-tone — subtle text
+
+[ui.text.blue]
+base  = "#7AAFC4"   # sky
+tint  = "#9EE4FF"   # bright sky
+shade = "#024360"   # deep navy
+
+[ui.text.green]
+base  = "#8AAF6E"   # forest
+tint  = "#C8FFA6"   # bright leaf
+shade = "#7B9C66"   # muted forest
+
+[ui.text.pink]
+base  = "#D63DA7"   # magenta mid
+tint  = "#FF00BF"   # saturated magenta
+shade = "#AD7B8F"   # muted rose
+
+[ui.accent]
+base  = "#e6a600"   # primary accent
+shade = "#B88400"   # 20% darker
+
+[ui.bg]
+base      = "#212733"   # main background
+tint      = "#2c323d"   # slightly lighter
+shade     = "#1e232e"   # slightly darker
+panel     = "#181C25"   # panels, sidebars
+highlight = "#332E2B"   # cursor line, selections
+elem      = "#1C1917"   # columns, inactive areas
+
+# ── Accents ───────────────────────────────────────────────────────────────────
+
+[accent]
+base  = "#E6B34A"   # golden beak — primary accent
+shade = "#b88f3b"   # 20% darker
+tint  = "#e9bb5c"   # 20% lighter
+deep  = "#AA8943"   # 70% accent blended with bg.primary.base
+
+[dim]
+muted = "#998145"
+surface = "#353129"
+
+# ── Named plumage colors ──────────────────────────────────────────────────────
+
+[color]
+orange       = "#D4813E"   # rich orange breast plumage
+orange_light = "#E6A05C"   # lighter breast detail
+gold_light   = "#F0CC6E"   # bright gold highlight
+brown        = "#9E6B42"   # warm earth brown
+cream        = "#E8DCC8"   # pale underside
+buff         = "#C4A87A"   # dried grass, operators
+rust         = "#C05A3A"   # rust-red wing markings, errors
+scallop      = "#1A1210"   # darkest scallop pattern (borders)
+forest       = "#8AAF6E"   # forest green foliage
+moss         = "#6E8F56"   # deep moss, regexp
+leaf         = "#B5C96A"   # bright leaf, strings
+sky          = "#7AAFC4"   # sky glimpsed through canopy
+eye_ring     = "#F2E8D6"   # pale eye-ring, cursor
+plum         = "#C4889E"   # distant berry plum
+slate        = "#757b8a"   # distant stone, comments, pane borders
+
+# ── Semantic roles ────────────────────────────────────────────────────────────
+
+[semantic]
+# Mapping palette colors to syntax roles
+keyword        = "#D4813E"
+string         = "#B5C96A"
+function       = "#E6B34A"
+type           = "#7AAFC4"
+constant       = "#C4889E"
+operator       = "#C4A87A"
+tag            = "#8AAF6E"
+property       = "#E6A05C"
+regexp         = "#6E8F56"
+decorator      = "#E6B34A"
+comment        = "#757b8a"
+markup         = "#C05A3A"
+error          = "#C05A3A"
+warning        = "#D4813E"
+success        = "#8AAF6E"
+success_bg     = "#1c2316"
+selection      = "#4A3828"
+border         = "#1A1210"
+border_active  = "#3D3430"
+
+# ── Terminal ANSI 16 ──────────────────────────────────────────────────────────
+
+[ansi]
+black          = "#212733"
+red            = "#C05A3A"
+green          = "#8AAF6E"
+yellow         = "#E6B34A"
+blue           = "#7AAFC4"
+magenta        = "#C4889E"
+cyan           = "#6E8F56"
+white          = "#D9D7CE"
+bright_black   = "#757b8a"
+bright_red     = "#D4713E"
+bright_green   = "#B5C96A"
+bright_yellow  = "#F0CC6E"
+bright_blue    = "#94C4D6"
+bright_magenta = "#D4A0B4"
+bright_cyan    = "#8AAF6E"
+bright_white   = "#F2E8D6"
